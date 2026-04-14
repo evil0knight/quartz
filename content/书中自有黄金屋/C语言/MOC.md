@@ -1,46 +1,34 @@
 # C 语言 — 知识地图
 
-[← 学科总览](../MOC.md) | [← 主页](../../README.md)
+[← 学科总览](../MOC.md) | [← 主页](../../index.md)
 
 > 状态：📌 要强化基本功
 
 ---
 
-<details>
-<summary><h3>🔴语言基础</h3></summary>
+### 🔴语言基础
 
 🟢C语言定义的时候不可以连续赋值,因为要先定义后使用
 
 [数组---指定初始化器](数组---指定初始化器.md)
 
-</details>
+### 🔴指针（重点）
 
-<details>
-<summary><h3>🔴指针（重点）</h3></summary>
+### 🔴内存管理
 
-</details>
+### 🔴结构体 / 联合体 / 枚举
 
-<details>
-<summary><h3>🔴内存管理</h3></summary>
-
-</details>
-
-<details>
-<summary><h3>🔴结构体 / 联合体 / 枚举</h3></summary>
+[结构体,c语言和C++](./结构体,c语言和C++.md)
 
 [状态机,枚举(enum)](状态机,枚举(enum).md)
 
-</details>
+[协议解析：联合体 union](./联合体.md)
 
-<details>
-<summary><h3>🔴文件操作</h3></summary>
+### 🔴文件操作
 
-</details>
+### 🔴预处理 / 编译
 
-<details>
-<summary><h3>🔴预处理 / 编译</h3></summary>
-
-</details>
+[编译与链接](../C++PrimerPlus/C++编译与链接/编译与链接moc.md)
 
 ---
 
