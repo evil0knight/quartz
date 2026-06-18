@@ -1,17 +1,37 @@
 @use "./base.scss";
 
+/* ===== 页面宽度自适应 ===== */
+.page {
+  max-width: 95vw;
+}
+
+/* ===== 隐藏标题锚点链接图标 ===== */
+a[role="anchor"] {
+  display: none !important;
+}
+
 /* ===== Hero ===== */
 .home-hero {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   padding: 2rem 0 1.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+.home-hero-text {
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .home-hero {
+    flex-wrap: wrap;
+  }
 }
 
 .home-avatar {
-  width: 90px;
-  height: 90px;
+  width: clamp(70px, 8vw, 160px);
+  height: clamp(70px, 8vw, 160px);
   border-radius: 50%;
   border: 3px solid #7c6af7;
   object-fit: cover;
@@ -19,7 +39,7 @@
 }
 
 .home-title {
-  font-size: 3.3rem;
+  font-size: clamp(1.8rem, 5vw, 5rem);
   font-weight: 700;
   margin: 0 0 0.3rem;
   color: var(--dark);
@@ -72,6 +92,12 @@
   margin: 1rem 0;
 }
 
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 600px) {
   .card-grid {
     grid-template-columns: 1fr;
@@ -113,13 +139,13 @@
 }
 
 .card-icon {
-  font-size: 1.8rem;
+  font-size: clamp(1.3rem, 2.5vw, 2.8rem);
   flex-shrink: 0;
 }
 
 .card-title {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: clamp(0.85rem, 1.2vw, 1.3rem);
   color: var(--dark);
   margin-bottom: 0.2rem;
   overflow-wrap: anywhere;
@@ -127,7 +153,7 @@
 }
 
 .card-desc {
-  font-size: 0.8rem;
+  font-size: clamp(0.7rem, 1vw, 1.05rem);
   color: var(--darkgray);
   line-height: 1.4;
   min-height: calc(1.4em * 2);
@@ -140,7 +166,7 @@
 /* ===== 我的友链信息 ===== */
 .site-link-card {
   display: grid;
-  grid-template-columns: 120px minmax(0, 1fr);
+  grid-template-columns: clamp(100px, 12vw, 200px) minmax(0, 1fr);
   gap: 1rem;
   margin: 1rem 0;
   padding: 1rem;
@@ -151,8 +177,8 @@
 }
 
 .site-link-cover {
-  width: 120px;
-  height: 120px;
+  width: clamp(80px, 10vw, 200px);
+  height: clamp(80px, 10vw, 200px);
   object-fit: cover;
   border-radius: 16px;
   border: 1.5px solid var(--lightgray);
@@ -163,14 +189,14 @@
 }
 
 .site-link-title {
-  font-size: 1.05rem;
+  font-size: clamp(0.9rem, 1.3vw, 1.6rem);
   font-weight: 700;
   color: var(--dark);
   margin-bottom: 0.3rem;
 }
 
 .site-link-desc {
-  font-size: 0.88rem;
+  font-size: clamp(0.75rem, 1.1vw, 1.2rem);
   color: var(--darkgray);
   margin-bottom: 0.9rem;
 }
@@ -182,20 +208,20 @@
 
 .site-link-row {
   display: grid;
-  grid-template-columns: 5.5rem minmax(0, 1fr);
+  grid-template-columns: clamp(4.5rem, 7vw, 6.5rem) minmax(0, 1fr);
   gap: 0.75rem;
   align-items: start;
 }
 
 .site-link-label {
   color: var(--darkgray);
-  font-size: 0.82rem;
+  font-size: clamp(0.7rem, 1vw, 1rem);
   font-weight: 600;
 }
 
 .site-link-value {
   color: var(--dark);
-  font-size: 0.85rem;
+  font-size: clamp(0.72rem, 1.05vw, 1.1rem);
   overflow-wrap: anywhere;
   word-break: break-word;
 }
@@ -248,8 +274,8 @@
 }
 
 .friend-avatar {
-  width: 44px;
-  height: 44px;
+  width: clamp(36px, 5vw, 70px);
+  height: clamp(36px, 5vw, 70px);
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--lightgray);
@@ -268,11 +294,11 @@
 
 .friend-name {
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.1vw, 1.15rem);
   color: var(--dark);
 }
 
 .friend-desc {
-  font-size: 0.78rem;
+  font-size: clamp(0.7rem, 0.95vw, 1rem);
   color: var(--darkgray);
 }
