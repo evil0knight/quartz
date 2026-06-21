@@ -17,6 +17,7 @@ export const sharedPageComponents: SharedLayout = {
         strict: false,
         reactionsEnabled: true,
         inputPosition: "bottom",
+        lang: "zh-CN",
       },
     }),
   ],
