@@ -11,6 +11,8 @@
 <details>
 <summary><h3>🔴线性结构</h3></summary>
 
+- [链表](./链表.md)
+
 </details>
 
 <details>

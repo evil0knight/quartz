@@ -17,21 +17,21 @@ title: 首页
     <div class="card-icon">📚</div>
     <div class="card-body">
       <div class="card-title">书中自有黄金屋</div>
-      <div class="card-desc">教材学科笔记 · 计算机基础 · 电子电路</div>
+      <div class="card-desc">书本笔记 · 嵌入式相关的 </div>
     </div>
   </a>
   <a class="card" href="术中自有万钟粟/MOC.md">
     <div class="card-icon">⚙️</div>
     <div class="card-body">
       <div class="card-title">术中自有万钟粟</div>
-      <div class="card-desc">实用技术笔记 · Git · Modbus · IC设计</div>
+      <div class="card-desc">技术笔记 · 嵌入式软硬件 · 电脑配置等等</div>
     </div>
   </a>
   <a class="card" href="库中车马多如簇/MOC.md">
     <div class="card-icon">🔩</div>
     <div class="card-body">
       <div class="card-title">库中车马多如簇</div>
-      <div class="card-desc">硬件模块笔记 · WiFi · UART · 软件架构</div>
+      <div class="card-desc">模块笔记 · 外设代码 · 软件架构 · 硬件原理图等等</div>
     </div>
   </a>
 </div>
@@ -151,6 +151,20 @@ rss: https://evil0knight.github.io/quartz/index.xml
     <div class="friend-info">
       <div class="friend-name">HongLiu的小站</div>
       <div class="friend-desc">做自己所爱的事，爱自己所做的事。</div>
+    </div>
+  </a>
+  <a class="friend-card" href="https://fang.blog.miri.site/" target="_blank">
+    <img class="friend-avatar" src="https://img.lrurl.top/FangAvatar" alt="阿方的博客" />
+    <div class="friend-info">
+      <div class="friend-name">阿方的博客</div>
+      <div class="friend-desc">现实的引力太过沉重，任何飞扬的思想都会砰然坠地。</div>
+    </div>
+  </a>
+  <a class="friend-card" href="https://blog.tyh123.top" target="_blank">
+    <img class="friend-avatar" src="https://blog.tyh123.top/img/avatar.jpg" alt="硬件日记" />
+    <div class="friend-info">
+      <div class="friend-name">硬件日记</div>
+      <div class="friend-desc">分享单片机、FPGA 开发，和 PCB 设计经验，记录嵌入式开发路上的成长点滴。</div>
     </div>
   </a>
 </div>

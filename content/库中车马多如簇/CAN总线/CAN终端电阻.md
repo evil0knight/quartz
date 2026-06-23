@@ -1,6 +1,6 @@
 # CAN终端电阻
 
-[← 返回 MOC](MOC.md) | [← 主页](../../index.md)|[←CAN基础](CAN基础.md)
+[← 返回 MOC](./MOC.md) | [← 主页](../../index.md) | [← CAN基础](./can基础.md)
 
 ---
 

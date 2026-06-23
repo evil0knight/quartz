@@ -4,6 +4,22 @@
 
 ---
 
+底下的都过时了
+
+**底下的都过时了,直接装CCSWITCH:[下载链接](https://github.com/farion1231/cc-switch/releases/tag/v3.16.2)**
+
+**有两个版本的,选安装版的,移动版的对于有些可以自动导入CCS的网站不方便**
+
+---------2026/6/1
+
+
+
+
+
+---
+
+
+
 ## 1. 先改 Codex 自己的配置文件
 
 Codex 的配置文件在：
@@ -45,11 +61,7 @@ PowerShell 永久设置：
 [Environment]::SetEnvironmentVariable("OPENAI_API_KEY","你的API_KEY","User")
 ```
 
-设置后要：
-
-1. 关闭当前终端
-2. 重新打开终端
-3. 再运行 `codex`
+设置后要：重启VSCODE
 
 ---
 
@@ -68,79 +80,3 @@ ok
 ```
 
 说明 Codex 已经能正常连到你配置的接口。
-
----
-
-## 4. 如果接口报错怎么办
-
-有些 OpenAI 兼容站点要求地址必须带 `/v1`，如果当前地址不通，可以把：
-
-```toml
-base_url = "https://spatialai.vip/"
-```
-
-改成：
-
-```toml
-base_url = "https://spatialai.vip/v1"
-```
-
-如果你使用的是内置 OpenAI provider，也常见写法是：
-
-```toml
-openai_base_url = "https://xxx.xxx/v1"
-```
-
-但我这次采用的是**自定义 provider**方案，兼容性更直接一点。
-
----
-
-## 5. VS Code 里的 settings.json 要不要配
-
-可以保留：
-
-```json
-"OPENAI_BASE_URL": "https://spatialai.vip/"
-```
-
-但更关键的是：
-
-- `config.toml` 里 provider 要配对
-- `OPENAI_API_KEY` 最好走系统环境变量
-
-如果把 Key 明文写进：
-
-```text
-C:\Users\17443\AppData\Roaming\Code\User\settings.json
-```
-
-虽然能用，但不够安全，容易出现在：
-
-- 聊天记录
-- 编辑器历史
-- 本地日志
-- 配置同步
-
----
-
-## 6. 这次实际完成了什么
-
-### 已完成
-
-- 已修改 `C:\Users\17443\.codex\config.toml`
-- 已把 Codex provider 指到 `https://spatialai.vip/`
-- 已通过命令测试连通性
-
-### 测试命令
-
-```bash
-codex exec "Reply with exactly: ok"
-```
-
-### 测试结果
-
-```text
-ok
-```
-
-说明当前配置已经可用。

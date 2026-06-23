@@ -4,7 +4,7 @@
 
 > 原书：*C Traps and Pitfalls* — Andrew Koenig
 
-![1774158263962](image/MOC/1774158263962.png)
+![1774158263962](image/MOC/1774158263962.webp)
 
 ---
 
